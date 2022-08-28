@@ -1,0 +1,31 @@
+.chat-head-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5vh;
+    padding: 0.5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:rgb(66, 65, 65);
+}
+
+.user-profile-pic-text{
+    font-size: 3.5vh;
+    text-transform: capitalize;
+
+}
+
+.chat-head-item:hover{
+    background-color: rgb(16, 123, 230);
+}
+
+.user-profile-pic{
+    width: 4vh;
+    height: 4vh;
+    background-color: #ccc;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vh;
+    padding: 0.5vh;
+}

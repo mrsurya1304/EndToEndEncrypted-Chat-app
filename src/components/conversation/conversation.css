@@ -1,0 +1,88 @@
+.conversation-messages{
+    overflow-y: scroll;
+    height: 67vh;
+    padding: 0vh,1vh,0vh,1vh;
+    padding-bottom: 1vh;
+}
+
+.input-container{
+    display: flex;
+}
+
+.input-container button{
+    height:36px;
+    margin-top: 23px;
+    width: 50px;
+    font-size: 16px;
+}
+
+.input-message input{
+    margin-top: 5px;
+    width: 740px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.message-container{
+    display: flex;    
+}
+
+.message-content{
+    font-size: 18px;
+    background-color: rgb(16, 123, 230);
+    margin: 0.5vh,0vh,0.5vh,0vh;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    padding: 0.5vh;
+    border-radius: 10px;
+    min-width: 8vh;
+    color: white;
+}
+
+.chatscreen{
+    width: 100%;
+    background-color: rgb(16, 123, 230);
+    color: white;
+}
+
+.chat{
+    width: 65%;
+    margin-top: auto;
+    padding: 20px;
+    float: left;
+    background-color:rgb(66, 65, 65);
+}
+
+.chat p{
+    text-align: center;
+}
+
+.encryption-elements{
+    background-color: rgb(16, 123, 230);
+    color: white;
+    height: 705px;
+    font-size: 20px;
+}
+
+input{
+    width:350px;
+    height: 25px;
+}
+
+.nochat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:705px;
+    background-color:rgb(66, 65, 65);
+
+}
+
+.nochat p{
+    font-size: 28px;
+}
+
+
+
+
+
