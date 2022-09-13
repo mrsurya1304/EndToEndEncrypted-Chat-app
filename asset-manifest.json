@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/EndToEndEncrypted-Chat-app/static/css/main.216f3485.chunk.css",
+    "main.js": "/EndToEndEncrypted-Chat-app/static/js/main.305fe250.chunk.js",
+    "main.js.map": "/EndToEndEncrypted-Chat-app/static/js/main.305fe250.chunk.js.map",
+    "runtime-main.js": "/EndToEndEncrypted-Chat-app/static/js/runtime-main.1402702a.js",
+    "runtime-main.js.map": "/EndToEndEncrypted-Chat-app/static/js/runtime-main.1402702a.js.map",
+    "static/js/2.b9ee4b77.chunk.js": "/EndToEndEncrypted-Chat-app/static/js/2.b9ee4b77.chunk.js",
+    "static/js/2.b9ee4b77.chunk.js.map": "/EndToEndEncrypted-Chat-app/static/js/2.b9ee4b77.chunk.js.map",
+    "static/js/3.7790baa2.chunk.js": "/EndToEndEncrypted-Chat-app/static/js/3.7790baa2.chunk.js",
+    "static/js/3.7790baa2.chunk.js.map": "/EndToEndEncrypted-Chat-app/static/js/3.7790baa2.chunk.js.map",
+    "index.html": "/EndToEndEncrypted-Chat-app/index.html",
+    "static/css/main.216f3485.chunk.css.map": "/EndToEndEncrypted-Chat-app/static/css/main.216f3485.chunk.css.map",
+    "static/js/2.b9ee4b77.chunk.js.LICENSE.txt": "/EndToEndEncrypted-Chat-app/static/js/2.b9ee4b77.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1402702a.js",
+    "static/js/2.b9ee4b77.chunk.js",
+    "static/css/main.216f3485.chunk.css",
+    "static/js/main.305fe250.chunk.js"
+  ]
+}
