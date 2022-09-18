@@ -1,6 +1,10 @@
 # SecureChat
 ## Description
-SecureChat is a secure instant messaging application made in React and Firebase which allows users to chat with each other securely with Firebase Authentication and End to End Encryption performed with a Diffie Hellman Key Exchange and AES Encryption. Messages are stored in encrypted format and the encrypted message is decrypted on the client side. The secret key is only known to the two users chatting and not even the backend server so messages cant be accessed by anyone other than the two users chatting hence bringing in security.
+SecureChat is a secure instant messaging application made in React and Firebase which allows users to chat with each other securely with Firebase Authentication and End to End Encryption performed with a Diffie Hellman Key Exchange and AES Encryption. 
+
+Messages are stored in encrypted format and the encrypted message is decrypted on the client side. 
+
+The secret key is only known to the two users chatting and not even the backend server so messages cant be accessed by anyone other than the two users chatting hence bringing in security.
 
 ## How to run on a computer from Github
 1. Create a folder in a path convinient to you
