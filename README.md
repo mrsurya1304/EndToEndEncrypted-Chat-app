@@ -1,6 +1,6 @@
 # SecureChat
 ## Description
-SecureChat is a secure instant messaging application made in React and Firebase which allows users to chat with each other securely with Firebase Authentication and End to End Encryption performed with a Diffie Hellman Key Exchange and AES Encryption.
+SecureChat is a secure instant messaging application made in React and Firebase which allows users to chat with each other securely with Firebase Authentication and End to End Encryption performed with a Diffie Hellman Key Exchange and AES Encryption. Messages are stored in encrypted format and the encrypted message is decrypted on the client side. The secret key is only known to the two users chatting and not even the backend server so messages cant be accessed by anyone other than the two users chatting hence bringing in security.
 
 ## How to run on a computer from Github
 1. Create a folder in a path convinient to you
@@ -27,3 +27,22 @@ Demo : https://youtu.be/mH0QRrmPZ5k
 - You can type in messages and send them with the send button or enter key to the receiver
 - Along with the chat screen on the far right you can see how DH Key exchange and AES work dynamically
 - Once you are done with your conversation you can click the Log out button on the top left to log out redirecting you back to the login page
+
+## Features of SecureChat
+- Register: Enter your credentials (Username and Password) and by using Firebase Authentication a new user will be created and added to the users database
+- Login: If previously registered, enter your credentials and your credentials will be verified and authenticated. You will now be able to access the chat
+- Users retreival: All users of the chatting application are retreived from the users database and shown to the logged in user.
+- Chatting: Select the user you want to chat to by clicking on their username.
+- Previous message retreival: Once you select a user, if you have previously chatted your old conversations are fetched from the conversations database and shown to the user
+- Send messages: Type your message in the text field given and either click the send button or click enter to send the message to the receiver and store in the conversations database
+- Receive message: The sent message is instantly received from the conversations database and displayed onto the receivers screen
+- Encryption demonstration: When you are chatting the various Diffie Hellman Parameters, Secret key, Encrypted and Decrypted message is visible to you and changes according to the message sent/received.
+- Log out: Click the log out button to sign out which redirects back to the Log in page
+
+## Concepts used to build SecureChat
+
+## Link to use SecureChat
+
+## Future ideas
+
+## Acknowledgements
