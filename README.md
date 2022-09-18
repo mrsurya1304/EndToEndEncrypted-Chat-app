@@ -40,8 +40,55 @@ Demo : https://youtu.be/mH0QRrmPZ5k
 - Log out: Click the log out button to sign out which redirects back to the Log in page
 
 ## Concepts used to build SecureChat
+- We have 2 screens for the app
+  - Login Screen
+  - Chat Screen
+
+### Login Screen
+- Initially we generate the DH parameters (prime and generator values) and store it in the Diffie Hellman parameters database
+ 
+#### Registration
+- We get the entered credentials (userid and password from the user)
+- Use Firebase Authentication and the details entered to create an account for the user
+- After authentication get the Diffie Hellman parameters and generate a private key for the user
+- Compute the public key for the user
+- Add the user with DH parameters to the users database
+- Add the user to localstorage so the user doesnt have to log in if on the same session
+- Log in the user to access the chat after registration
+
+#### Login
+- We get the entered credentials (userid and password from the user)
+- Check credentials using Firebase Authentication
+- If there is a match add the user to localstorage and log the user in
+
+### Chat Screen
+- Here we have 3 components
+    - Navbar
+    - Chat heads
+    - Conversation Screen
+
+#### Navigation bar
+- Contains the SecureChat logo
+- Contains the current user's username and log out button while logged in
+
+#### Chat heads
+- Shows the various users to chat with
+- When a user is selected displays a conversation screen and sets the selected user as the receiver
+
+#### Conversation screen
+- Handles Sending messages, Uses the secret key generated between the two users previously using DH and encrypts messages with that key using AES
+- Contains an input bar to enter a message and a button to send message (Can also be sent with enter)
+- Feature to scroll to the bottom of the chat if there are many messages while loading
+- This process is shown on the encryption demo screen on the right (Encrypted message fetched from database, Decryption process, Message typed from the user to send and the Encryption process)
+- Appends sent message to the conversations database if it already exists else we create a new document for the conversation
+- Also retreives messages sent by getting the conversation from the conversations database
 
 ## Link to use SecureChat
+This project has been hosted on GitHub Pages. 
+
+You can run this application on your browser
+
+Link : https://mrsurya1304.github.io/EndToEndEncrypted-Chat-app
 
 ## Future ideas
 
