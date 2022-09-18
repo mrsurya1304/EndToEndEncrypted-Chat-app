@@ -91,5 +91,12 @@ You can run this application on your browser
 Link : https://mrsurya1304.github.io/EndToEndEncrypted-Chat-app
 
 ## Future ideas
+- Limit the number of users using the system (Retain the n newest newest users), No count function in Firebase
+- Implement Triple Diffie Hellman along with a double ratchet (Signal protocol), End to End Encryption strategy used in famous instant messaging apps.
+- Plenty of unnecessary reads making the app slow. (Need optimization and reduced number of reads)
+- Diffie Hellman parameters are in a certain small range difficult to work with large numbers in JS (Wrapping araound of numbers) hence chances for duplication in private, public and secret key. Need to widen the range for DH parameters.
 
 ## Acknowledgements
+- The idea of building a chatting application with React and Firebase is heavily inspired by the youtube channel Nxt-Code
+- Video link: https://youtu.be/hQqqBr02W6k
+- I have added Diffie Hellman key exchange along with AES encryption to make the chat app end to end encrypted enhancing security 
