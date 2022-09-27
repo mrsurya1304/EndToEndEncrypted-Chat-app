@@ -17,16 +17,17 @@ const logout = () => {  //Method to log out
     
     <div className='navbar-container'>
         {user ? (
-        <div>
-          <p>{user.email}</p>
+        <div className='navbar-content'>
+          <p>{user.email}</p><br /><br />
           <button className='logout' onClick={logout}>Log out</button>
         </div>
          ) : (
-        <div>
+        <div className='navbar-content'>
           <p>Login to use chat</p>
         </div>
          )}
-         <div className='appname'>SecureChat</div>
+         <p className='appname'>SecureChat</p>
+         <p></p>
     </div>
     
  )

@@ -1,25 +1,37 @@
-.navbar-container{
+.navbar-container
+{
     display: flex;
-    padding: 3vh;
+    width: 95%;
+    padding: 1%;
+    height: auto;
     align-items: center;
+    justify-content:space-between;
     border-bottom: 1px solid #ccc;
     background-color: rgb(16, 123, 230);
     color: white;
 }
-p{
-    font-size: 20px;
-}
 
-.appname{
-    margin-left: 480px;
-    font-size: 32px;
+.appname
+{
+    font-size: 250%;
     font-weight: bold;
-    color: white;
 }
 
-.logout{
+.navbar-content 
+p
+{
+    font-size: 130%;
+    margin-left: 5%;
+    float: left;
+}
+
+button{
     background-color: rgb(16, 123, 230);
     font-weight: bold;
     border-color: black;
     color: white;
+}
+
+button:hover{
+    background-color: silver;
 }

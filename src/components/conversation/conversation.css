@@ -7,20 +7,28 @@
 
 .input-container{
     display: flex;
+    align-items: center;
+    justify-content:space-between;
+    overflow: auto;
 }
 
 .input-container button{
-    height:36px;
-    margin-top: 23px;
-    width: 50px;
+    height:37px;
+    margin-top: 10vh;
+    width: 5vw;
     font-size: 16px;
+}
+.input-container button:hover{
+    background-color: silver;
 }
 
 .input-message input{
-    margin-top: 5px;
-    width: 740px;
+    margin-top: 8vh;
+    width: 45.5vw;
     height: 30px;
     font-size: 16px;
+   margin-left: 0.5vh;
+   float: left;
 }
 
 .message-container{
@@ -31,7 +39,7 @@
     font-size: 18px;
     background-color: rgb(16, 123, 230);
     margin: 0.5vh,0vh,0.5vh,0vh;
-    margin-top: 10px;
+    margin-top: 1vh;
     border-bottom: 1px solid white;
     padding: 0.5vh;
     border-radius: 10px;
@@ -47,33 +55,37 @@
 
 .chat{
     width: 65%;
+    height: 90vh;
     margin-top: auto;
-    padding: 20px;
     float: left;
     background-color:rgb(66, 65, 65);
+    overflow: auto;
 }
 
 .chat p{
     text-align: center;
+    font-size: 18px;
 }
 
 .encryption-elements{
     background-color: rgb(16, 123, 230);
     color: white;
-    height: 705px;
-    font-size: 20px;
+    height: 90vh;
+    font-size: 18px;
+    overflow: auto;
 }
 
 input{
-    width:350px;
-    height: 25px;
+    width:20vw;
+    height: 20px;
+    font-size: 16px;
 }
 
 .nochat{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:705px;
+    height:87vh;
     background-color:rgb(66, 65, 65);
 
 }

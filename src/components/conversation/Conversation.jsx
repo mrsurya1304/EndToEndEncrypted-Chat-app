@@ -64,11 +64,20 @@ export default function Conversation({ receiver, user }) {
     }
 
     ciphertext = "";
+    currentMessage.current.value = "";
   };
 
   //Method to compute the Diffie Hellman shared secret key
   const setSecretKey = async () => {
     var dhprime,dhgen,receiverpub,senderpriv,senderpub;  //Required variables
+
+    if (!receiver || !user) return; //If no receiver is selected we return
+
+    setmessagesent("");
+    setMessageencrypted("");
+    setlastmessageencrypted("");
+    setlastmessagedecrypted("");
+
     
     const dhRef = doc(db, "dhparameters", "dh");  //Getting the DH prime and generator from the dhparameters collection in firebase
     const docSnap = await getDoc(dhRef);
@@ -102,24 +111,17 @@ export default function Conversation({ receiver, user }) {
 
     let sharedSecret = power(receiverpub,senderpriv,dhprime); //Computing the value of the shared secret
     setsecretkey(sharedSecret);
+    let myConvId;
+
+    if (receiver.uid > user.uid) myConvId = receiver.uid + user.uid;  //Appending the ids in alphabetical order to get the Conversation id in the database
+    else myConvId = user.uid + receiver.uid;
+
+    setConversationId(myConvId);
   }
 
   // set conversationId
   React.useEffect(() => {
-    if (!receiver || !user) return; //If no receiver is selected we return
-
-    setmessagesent("");
-    setMessageencrypted("");
-    setlastmessageencrypted("");
-    setlastmessagedecrypted("");
-
-    let myConvId;
-
-    if (receiver.uid > user.uid) myConvId = receiver.uid + user.uid;  //Sorting the id of the users lexicographically to keep track of the conversations
-    else myConvId = user.uid + receiver.uid;
-
     setSecretKey(); //Calculating the Diffie Hellman shared secret
-    setConversationId(myConvId);
   }, [receiver, user]);
 
   // get converastion from firestore
@@ -157,7 +159,7 @@ export default function Conversation({ receiver, user }) {
     );
 
     return unsub;
-  }, [secretkey]);
+  }, [conversationId]);
 
   // send message with enter
   const handleEnterKeyPressDown = (e) => {
@@ -199,7 +201,7 @@ export default function Conversation({ receiver, user }) {
                 <div className="input-message">
                     <br/><input placeholder="Enter message" ref={currentMessage}  onKeyPress={handleEnterKeyPressDown}/>
                 </div>
-            <button onClick={sendMessage} currentMessage="Hello">Send</button>
+            <button onClick={sendMessage} currentMessage="Hello">Go</button>
           </div>
         </div>
       ) : ( //If no receiver

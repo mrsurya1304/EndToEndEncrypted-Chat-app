@@ -1,20 +1,19 @@
 .chat-screen{
     display: flex;
-    width:100%;
-    height: 83.8vh;
+    width: 100%;
+    height: 90vh;
 }
 
 .half-screen{
-    width: 1000%;
+    width: 80%;
     border: 1px solid #ccc;
-    border-top: 0px;
-
 }
 
 .chat-heads{
-    width: 25%;
+    width: 20%;
     background-color:rgb(66, 65, 65);
     border: 1px solid #ccc;
     color: white;
+    overflow: auto;
 }
 

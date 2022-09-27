@@ -5,6 +5,7 @@ import {doc,setDoc,getDoc} from 'firebase/firestore';
 import Navbar from "./components/navbar/Navbar";
 import ChatScreen from "./screens/chat-screen/ChatScreen";
 import LoginScreen from "./screens/login-screen/LoginScreen";
+import "./App.css"
 
 function App() {
   const [user, setUser] = useState(null); //User of the chat app initially set to null before log in
@@ -29,7 +30,7 @@ function App() {
     <div>
       <Router>
         {/* Navigation bar*/}
-        <Navbar user={user} setUser={setUser} /> 
+        <div className="navbar"><Navbar user={user} setUser={setUser} /> </div>
 
         <Switch>
           {/* Chat screen with user details*/}

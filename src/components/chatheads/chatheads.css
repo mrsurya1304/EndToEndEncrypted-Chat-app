@@ -6,21 +6,28 @@
     border-radius: 10px;
     cursor: pointer;
     background-color:rgb(66, 65, 65);
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .user-profile-pic-text{
-    font-size: 3.5vh;
+    font-size: 20px;
     text-transform: capitalize;
-
 }
 
 .chat-head-item:hover{
     background-color: rgb(16, 123, 230);
 }
 
+.username{
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .user-profile-pic{
-    width: 4vh;
-    height: 4vh;
+    width: 25px;
+    height: 25px;
     background-color: #ccc;
     display: flex;
     border-radius: 50%;
@@ -28,4 +35,5 @@
     align-items: center;
     margin-right: 1vh;
     padding: 0.5vh;
+    
 }
