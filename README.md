@@ -21,7 +21,7 @@ SecureChat loads up and will be ready to use Enjoy
 
 Demo : https://youtu.be/mH0QRrmPZ5k
 
-## How to use CSVisualizer
+## How to use SecureChat
 - Entering the app there will be a login screen which asks for your username and password
 - If you are a registered user, enter your registered credentials and click Log in
 - Else enter your new username and password and click register
@@ -86,6 +86,13 @@ Demo : https://youtu.be/mH0QRrmPZ5k
 - This process is shown on the encryption demo screen on the right (Encrypted message fetched from database, Decryption process, Message typed from the user to send and the Encryption process)
 - Appends sent message to the conversations database if it already exists else we create a new document for the conversation
 - Also retreives messages sent by getting the conversation from the conversations database
+
+## How SecureChat looks like
+![alt text](https://github.com/mrsurya1304/EndToEndEncrypted-Chat-app/blob/main/samples/sample1.png)
+![alt text](https://github.com/mrsurya1304/EndToEndEncrypted-Chat-app/blob/main/samples/sample2.png)
+![alt text](https://github.com/mrsurya1304/EndToEndEncrypted-Chat-app/blob/main/samples/sample3.png)
+![alt text](https://github.com/mrsurya1304/EndToEndEncrypted-Chat-app/blob/main/samples/sample4.png)
+![alt text](https://github.com/mrsurya1304/EndToEndEncrypted-Chat-app/blob/main/samples/sample5.png)
 
 ## Link to use SecureChat
 This project has been hosted on GitHub Pages. 
