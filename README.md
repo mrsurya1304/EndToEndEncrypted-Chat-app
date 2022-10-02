@@ -33,7 +33,7 @@ Demo : https://youtu.be/mH0QRrmPZ5k
 - Once you are done with your conversation you can click the Log out button on the top left to log out redirecting you back to the login page
 
 ## Sample credentials
-  Username          Password
+  Username              Password
   
   user1@gmail.com   abcd1234
   
