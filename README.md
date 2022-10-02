@@ -32,6 +32,15 @@ Demo : https://youtu.be/mH0QRrmPZ5k
 - Along with the chat screen on the far right you can see how DH Key exchange and AES work dynamically
 - Once you are done with your conversation you can click the Log out button on the top left to log out redirecting you back to the login page
 
+## Sample credentials
+  Username          Password
+  
+  user1@gmail.com   abcd1234
+  
+  user2@gmail.com   1234abcd
+  
+  user3@gmail.com   12345678
+
 ## Features of SecureChat
 - Register: Enter your credentials (Username and Password) and by using Firebase Authentication a new user will be created and added to the users database
 - Login: If previously registered, enter your credentials and your credentials will be verified and authenticated. You will now be able to access the chat
