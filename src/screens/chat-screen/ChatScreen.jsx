@@ -45,7 +45,7 @@ React.useEffect(() => { //To fetch the available users from firebase
           <ChatHeads items={chatHeads} setreceiver={setreceiver} />
         </div>
 
-        <div className='half-screen'>
+        <div className='half-screen conversation'>
           {/*Conversation screen to chat with the selected receiver */}
           <Conversation receiver={receiver} user={user} />
         </div>

@@ -15,9 +15,9 @@ const logout = () => {  //Method to log out
   return (  //Navigation bar with a welcome message if logged in and log out button. If not logged in we ask user to log in
     
     
-    <div className='navbar-container'>
+    <div className= {user ? "userset":"usernotset"}>
         {user ? (
-        <div className='navbar-content'>
+        <div className='navbar-user'>
           <p>{user.email}</p><br /><br />
           <button className='logout' onClick={logout}>Log out</button>
         </div>

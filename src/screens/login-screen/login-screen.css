@@ -20,6 +20,7 @@
 .input input{
     background-color: rgb(162, 162, 162);
     height: 20px;
+    min-width: 200px;
     font-size: 90%;
     color: white;
 }
@@ -31,7 +32,8 @@
 
 .button{
     height: 30px;
-    width:12vw;
+    width: 12vw;
+    min-width:100px;
     background-color: rgb(66, 65, 65);
     color: white;
     font-size: 80%;

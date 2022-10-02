@@ -1,4 +1,4 @@
-.navbar-container
+.userset, .usernotset
 {
     display: flex;
     width: 95%;
@@ -11,19 +11,20 @@
     color: white;
 }
 
-.appname
+.userset .appname,.usernotset .appname
 {
     font-size: 250%;
     font-weight: bold;
 }
 
-.navbar-content 
+.userset p,.usernotset
 p
 {
     font-size: 130%;
     margin-left: 5%;
     float: left;
 }
+
 
 button{
     background-color: rgb(16, 123, 230);
@@ -34,4 +35,10 @@ button{
 
 button:hover{
     background-color: silver;
+}
+
+@media only screen and (max-width:480px){
+    .userset{
+        min-width: 1250px;
+    }
 }

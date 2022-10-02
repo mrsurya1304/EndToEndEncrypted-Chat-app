@@ -1,5 +1,5 @@
 .conversation-messages{
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 67vh;
     padding: 0vh,1vh,0vh,1vh;
     padding-bottom: 1vh;
@@ -15,7 +15,9 @@
 .input-container button{
     height:37px;
     margin-top: 10vh;
+    margin-right: 0.5vh;
     width: 5vw;
+    min-width: 50px;
     font-size: 16px;
 }
 .input-container button:hover{
@@ -24,11 +26,19 @@
 
 .input-message input{
     margin-top: 8vh;
-    width: 45.5vw;
+    width: 46.5vw;
+    min-width: 300px;
     height: 30px;
     font-size: 16px;
-   margin-left: 0.5vh;
-   float: left;
+    margin-left: 0.5vh;
+    float: left;
+}
+
+.receiver{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .message-container{
@@ -75,6 +85,10 @@
     overflow: auto;
 }
 
+form{
+    margin-left: 2vw;
+}
+
 input{
     width:20vw;
     height: 20px;
@@ -92,6 +106,18 @@ input{
 
 .nochat p{
     font-size: 28px;
+}
+
+@media only screen and (max-width:480px){
+    .chat{
+        min-width: 365px;
+    }
+    .input-message input{
+        min-width: 610px;
+    }
+    .encryption-elements input{
+        min-width:300px
+    }
 }
 
 

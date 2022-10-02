@@ -185,7 +185,7 @@ export default function Conversation({ receiver, user }) {
       
       {receiver ? ( //If we have a receiver
         <div className="chat">
-          <p>Conversation with {receiver.email}</p>
+          <p title={receiver.email} className="receiver">Conversation with {receiver.email}</p>
 
           {/* Conversation messages */}
           <div className="conversation-messages" ref={chatBodyRef}>
@@ -217,23 +217,23 @@ export default function Conversation({ receiver, user }) {
         <div className='encryption-elements'>
           <form>
             <br/>
-            &emsp;Diffie Hellman Prime:<br /> &emsp;<input value={dhprime} readonly="readonly" ></input><br/><br/>
+            Diffie Hellman Prime:<br /> <input value={dhprime} readonly="readonly" ></input><br/><br/>
 
-            &emsp;Diffie Hellman Generator:<br /> &emsp;<input value={dhgenerator} readonly></input><br/><br/>
+            Diffie Hellman Generator:<br /> <input value={dhgenerator} readonly></input><br/><br/>
             
-            &emsp;Chosen private key:<br /> &emsp;<input value={senderpriv} readonly></input><br/><br/>
+            Chosen private key:<br /> <input value={senderpriv} readonly></input><br/><br/>
             
-            &emsp;Public key:<br /> &emsp;<input value={senderpub} readonly></input><br/><br/>
+            Public key:<br /> <input value={senderpub} readonly></input><br/><br/>
             
-            &emsp;Secret key from DH for AES:<br /> &emsp;<input value={secretkey} readonly></input><br/><br/>
+            Secret key from DH for AES:<br /> <input value={secretkey} readonly></input><br/><br/>
 
-            &emsp;Sent message is:<br /> &emsp;<input value={messagesent} readonly="readonly" onChange={(e) => setmessagesent(e.target.value)}/><br/><br/>
+            Sent message is:<br /> <input value={messagesent} readonly="readonly" onChange={(e) => setmessagesent(e.target.value)}/><br/><br/>
 
-            &emsp;Message encrypted as:<br /> &emsp;<input value={messageencrypted} readonly="readonly" onChange={(e1) => setMessageencrypted(e1.target.value)} /><br/><br/>
+            Message encrypted as:<br /> <input value={messageencrypted} readonly="readonly" onChange={(e1) => setMessageencrypted(e1.target.value)} /><br/><br/>
 
-            &emsp;Incoming message is :<br /> &emsp;<input value={lastmessageencrypted} readonly="readonly" onChange={(e2) => lastmessageencrypted(e2.target.value)} /><br/><br/>
+            Incoming message is :<br /> <input value={lastmessageencrypted} readonly="readonly" onChange={(e2) => lastmessageencrypted(e2.target.value)} /><br/><br/>
 
-            &emsp;Message decrypted as:<br /> &emsp;<input value={lastmessagedecrypted} readonly="readonly" onChange={(e3) => lastmessagedecrypted(e3.target.value)} /><br/><br/>
+            Message decrypted as:<br /> <input value={lastmessagedecrypted} readonly="readonly" onChange={(e3) => lastmessagedecrypted(e3.target.value)} /><br/><br/>
             </form>
           
         </div>
